@@ -63,3 +63,26 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+<h1>Hallo</h1>
+Migration table users + seeder
+
+Controller [
+	'AuthController' = 'Login,Registrasi',
+	'DashboardController' = 'Dashboard'
+]
+Model [
+	User.php
+]
+View[
+	'crud(core)' = 'Login,register,dashboard',
+	'layout(blade)' = 'maincrud,navbarcrud,sidebarcrud + template pdf & email' 
+]
+
+1. Jalankan migrasi dan seeder
+2. Masuk url 127.0.0.1:8000(localhost) diarahkan ke page login
+3. Buat akun di page registrasi isi jika berhasil akan dikirimkan email dari laravel(akun2ndmulhb@gmail.com) redirect ke login
+4. Login email + password
+5. Dashboard (Bisa edit profile, changepassword(tanpa verifikasi), Delete akun, Get PDF dan Excel)
+
